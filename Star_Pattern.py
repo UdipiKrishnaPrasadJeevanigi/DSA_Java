@@ -71,9 +71,34 @@ for i in range(n):
 
 # 7th pattern
 
+
+# 1 
+# 0 1 
+# 0 1 0 
+# 1 0 1 0 
+# 1 0 1 0 1 
+
 n = 10
 toggle = 1
 for i in range(n):
+    row = ""
+    for j in range(i+1):
+        row = row  + str(toggle) + " "
+        if  toggle == 1:
+            toggle = 0
+        else:
+            toggle = 1
+    print(row)
+
+# 1 
+# 1 0 
+# 1 0 1 
+# 1 0 1 0
+# 1 0 1 0 1
+
+n = 10
+for i in range(n):
+    toggle = 1
     row = ""
     for j in range(i+1):
         row = row  + str(toggle) + " "
